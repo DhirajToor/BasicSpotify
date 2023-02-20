@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+}
+
+body {
+    background-color: antiquewhite;
+    overflow-y: none;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 64px;
+    background-color: black;
+    color:white;
+    align-items: center;
+
+}
+nav ul li {
+    padding: 0 10px;
+}
+.brand img{
+    height: 44px;
+    padding: 0 8px;
+    
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.container{
+ 
+    min-height: 76vh;
+      
+    /* background-color: green; */
+    color: white;
+    font-family: 'Varela Round',sans-serif;
+    margin: 22px  auto;
+    width: 72%;
+
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('images/bg.jpg');
+    background-size: 100%;
+    
+}
+
+.bottom{
+    margin-top: 8vh;
+    position: sticky;
+    height: 130px;
+    background-color: rgb(2, 8, 13);
+    color:white;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    margin-top: 20px;
+}
+
+#myProgressBar{
+    width: 88vw;
+    cursor: pointer;
+    
+}
+.icons i {
+    margin:10px;
+    cursor: pointer;
+}
+.songItem{
+    border-radius: 25px;
+    display: flex;
+ height:50px;
+ background-color: white;
+ color: black;
+ width: 45%;
+ justify-content: space-between;
+ align-items: center;
+ margin: 5px 0;
+}
+
+.songItem img{
+
+    border-radius: 50px;
+    width: 12%;
+    height: 95%;
+}
+.timestamp{
+    margin:0 23px;
+}
+.timestamp i {
+    
+    cursor: pointer;
+}
+
+.songlistcontainer{
+    margin-top: 25px;
+}
+
+.songInfo{
+    position: absolute;
+    left: 5.4vw;
+}
+.songInfo img {
+
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    width: 12%;
+}
+#masterSongName{
+    font-weight:bold ;
+    font-family: 'Ubuntu', sans-serif;
+}
